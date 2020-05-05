@@ -83,6 +83,7 @@ main hr{
 }
 main article p{
     margin-bottom: 1em;
+    color: #000;
 } 
 .headroom{
     transition: transform .3s ease;
