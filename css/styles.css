@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #f6f6f6;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    padding-top: 80px;
+    
+}
+header{
+    background: #1A5276;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.icon-menu{
+    display: none;
+}
+.menu{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Nombre h2{
+    font-size: 2em;
+    font-family: calibri;
+    color: #fff;
+    font-weight: lighter;
+    margin: 10px 0;
+}
+.side{
+    display: none;
+}
+.enlaces{
+    display: inline-block;
+    text-align: right;
+}
+.enlaces a{
+    font-size: 18px;
+    font-weight: lighter;
+    color: #FFF;
+    text-decoration: none;
+    padding: 15px 7px;
+    display: inline-block;
+    transition: all 400ms ease;
+}
+.enlaces a:hover{
+    background: #2471A3;
+    border: 2px solid #FFF;
+}
+.menu .btn-menu{
+    display: none;
+    color: #fff;
+    font-size: 1em;
+}
+main{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba( 0,0,0,0.75);
+    margin-bottom: 30px;
+}
+main article h1{
+    font-weight: normal;
+    margin-bottom: .5em;
+}
+main hr{
+    margin-bottom: 1em;
+    height: 2px;
+    background: #1A5276;
+    border: none;
+}
+main article p{
+    margin-bottom: 1em;
+} 
+.headroom{
+    transition: transform .3s ease;
+}
+.headroom--pinned{
+    transform: translateY(0%);
+}
+.headroom--unpinned{
+    transform: translateY(-100%);
+}
+.menubar{
+    display: none;
+}
+@media screen and (max-width: 1300px){
+    
+.icon-menu{
+    display: none;
+}
+    .menu .enlaces{
+        display: none;
+    }
+    .menu  {
+        width: 100%;
+        max-width: none;
+        background: #1A5276;
+        position: fixed;
+    }
+    .menu .Nombre h2{
+        display: block;
+        margin-left: 20px;
+    }
+    .side{
+        display: inline-block;
+        position: fixed;
+        top: 0;
+        width: 20%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        margin-top: 61px;
+        background: #1A5276;
+    }
+       .side a{
+        color: #FFF;
+        text-decoration: none;
+    }
+    .side li{
+        list-style: none;
+        padding: 20px;
+        text-align: center;
+        transition: all 500ms;
+    }
+    .side li span{
+        font-size: 30px;
+    }
+    .side li h4{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        transform: translateY(10px);
+    }
+    .side li:hover{
+        transform: translateY(10px);
+        background: #2471A3;
+        border-bottom: 3px solid #FFF;
+    }
+    main{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        width: 75%;
+        max-width: none;
+        margin: auto;
+        margin-left: 22%;
+        margin-right: auto;
+        margin-bottom: 1%;
+        padding: 20px;
+        box-shadow: 0px 2px 5px rgba( 0,0,0,0.75);       
+    }
+    .menubar{
+    display: none;
+    }
+}
+@media screen and (max-width: 700px) {
+    .side{
+        display: none;
+    }
+    .sidebar{
+        display: block;
+        position: absolute;
+        background: #1A5276;
+        height: 100%;
+        top: 60px;
+        transition:  400ms ;
+    }
+    .menubar{
+        background: #1A5276;
+        position: absolute;
+        display: block;
+        height: 100%;
+        line-height: 100%;
+        left: -25em;
+        top:0;
+        list-style: none;
+        width: 25em;
+    }
+    .menubar a {
+        display: block;
+        color: #eee;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 20px;
+    }
+    .menubar a span{
+        margin: 0 10px;
+    }
+    .menubar li {
+        border-bottom: 3px solid #eee;
+        padding-left: 1em;
+        line-height: 4em;
+        margin-bottom: 5px;
+    }
+    .menubar li:hover{
+        box-shadow: 0 rgba(250, 250, 250,.8) inset;
+        color: #000;
+
+    }
+    .menu {
+        text-align: center;
+        padding: 0 10px;
+    }
+    .Nombre h2{
+        display: block;
+        margin-right: -9em;
+    }
+    main{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        width: 90%;
+        margin: auto;
+        display: block;
+        margin-bottom: 2em;
+    }
+    .icon-menu{
+        display:block;
+        margin-top: 20px;
+        color: #eee;
+        font-size: 24px;
+        float: left;
+        cursor: pointer;
+    }
+    .abrir{
+        transform: translateX(25em)
+    }
+}
